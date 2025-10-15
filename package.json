@@ -1,0 +1,51 @@
+{
+  "name": "akvelon-gh-copilot-tracker",
+  "displayName": "Akvelon-GH-Copilot-Tracker",
+  "description": "Github copilot log collector",
+  "version": "1.3.0",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "akvelon-gh-copilot-tracker.CollectLogs",
+        "title": "Akvelon Copilot: Collect Logs"
+      },
+      {
+        "command": "akvelon-gh-copilot-tracker.Configure",
+        "title": "Copilot: Configure User Settings"
+      }
+    ],
+    "configuration": {
+      "title": "Akvelon Copilot Tracker",
+      "properties": {
+        "akvelon-gh-copilot-tracker.logDirectory": {
+          "type": "string",
+          "default": "",
+          "description": "Custom directory path for storing collected Copilot logs. If empty, uses default location in user's home directory."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.104.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.34.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

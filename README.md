@@ -88,21 +88,3 @@ Want to change where logs are saved?
 - Anything outside Copilot logs
 
 **All data stays on your machine. Nothing is sent anywhere.**
-
----
-
-Need help? Check the Output panel or create an issue on GitHub.
-```
-
-## What I Changed:
-
-1. ✅ **Cut 60% of the text** - Removed redundant explanations
-2. ✅ **Bigger headings** - Easier to scan
-3. ✅ **3 simple steps** - Combined installation and verification
-4. ✅ **Bullet points** - Faster to read than paragraphs
-5. ✅ **Removed duplicates** - Privacy section appears only once at the end
-6. ✅ **Simple troubleshooting** - Just the essentials
-7. ✅ **Clear YES/NO** - Quick understanding of what's collected
-8. ✅ **One-liner descriptions** - No lengthy explanations
-
-**Result**: Someone can now understand and install your extension in under 2 minutes! 🚀

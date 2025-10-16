@@ -37,15 +37,17 @@ Automatically tracks and organizes your GitHub Copilot usage logs locally on you
 
 ## 📁 Where Are My Logs?
 
-Default location: `~/.copilot-logs/` in your home folder
+Default location: `~/Desktop/{userName}_{company}_{team}-vs_code_logg_collector/`
+
+Example: `~/Desktop/John_Doe_Akvelon_Team1-vs_code_logg_collector/`
 
 ```
-.copilot-logs/
-├── 2025-09-30/
-│   ├── GitHub Copilot.log
-│   └── GitHub Copilot Chat.log
-└── archives/
-    └── 2025-09-30_copilot_logs.tar.gz
+John_Doe_Akvelon_Team1-vs_code_logg_collector/
+├── metrics/
+│   └── metrics_2025-10-15.json
+├── collection-state.json
+├── parsing_state.json
+└── user_config.json
 ```
 
 ## ⚙️ Settings (Optional)

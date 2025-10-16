@@ -107,28 +107,20 @@ function registerCommands(context) {
  * Set up automatic timers
  */
 function setupTimers() {
-    // Health check - first run after 5 minutes, then every 5 minutes
-    setTimeout(() => {
-        // First health check after 5 minutes
-        healthChecker.performHealthCheck().catch(error => {
-            outputChannel.appendLine(`Health check failed: ${error.message}`);
-        });
+    // Health check every 5 minutes (first run immediately after 5 minutes)
+    healthCheckTimer = setInterval(async () => {
+        try {
+            const healthStatus = await healthChecker.performHealthCheck();
 
-        // Then run every 5 minutes
-        healthCheckTimer = setInterval(async () => {
-            try {
-                const healthStatus = await healthChecker.performHealthCheck();
-
-                // If files were deleted, trigger re-collection
-                if (healthStatus && healthStatus.needsRecollection) {
-                    outputChannel.appendLine(`🔄 Starting recovery: re-collecting all logs...`);
-                    await logCollector.collectCopilotLogs(false, true);
-                }
-            } catch (error) {
-                outputChannel.appendLine(`Health check failed: ${error.message}`);
+            // If metrics were deleted, trigger re-collection
+            if (healthStatus && healthStatus.needsRecollection) {
+                outputChannel.appendLine(`🔄 Starting recovery: re-collecting logs to regenerate metrics...`);
+                await logCollector.collectCopilotLogs(false, true);
             }
-        }, 5 * 60 * 1000); // 5 minutes
-    }, 5 * 60 * 1000); // First run after 5 minutes
+        } catch (error) {
+            outputChannel.appendLine(`Health check failed: ${error.message}`);
+        }
+    }, 5 * 60 * 1000); // 5 minutes
 
     // Auto-collection every 60 minutes
     autoCollectionTimer = setInterval(async () => {

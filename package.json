@@ -1,5 +1,5 @@
 {
-  "name": "akvelon-copilot-insights",
+  "name": "akvelon-gh-copilot-tracker-vscode",
   "displayName": "Akvelon Copilot Insights for VS Code",
   "description": "Understand how GitHub Copilot is being used across your VS Code workspace — locally and securely. Track completions, chat sessions, and aggregate metrics as structured JSON reports without sending any data online.",
   "publisher": "GurgenKolotyan",

@@ -42,13 +42,13 @@ Designed for organizations requiring **strict privacy**, **compliance**, or **of
 1. Install the extension from the VS Code Marketplace
 2. Open the Command Palette
    `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
-3. Run → **Copilot: Configure User Settings**
+3. Run → **Akvelon Copilot: Configure User Settings**
 4. Provide name, company, and team when prompted
 
 #### Validate Installation
 
 1. Trigger a manual collection
-   `Ctrl+Shift+P → Collect Logs`
+   `Ctrl+Shift+P → Akvelon Copilot: Collect Logs`
 2. When the dialog opens, navigate to the logs folder
 3. Confirm that metrics files are present
 
@@ -88,11 +88,11 @@ Example (`metrics_YYYY-MM-DD.json`):
   "date": "2025-10-08",
   "source": "copilot",
   "action": "completion",
-  "servedBy": "unknown-model",
+  "servedBy": "gpt-5",
   "numRequests": 3,
-  "name": "[CONFIDENTIAL]",
-  "team": "[CONFIDENTIAL]",
-  "company": "[CONFIDENTIAL]",
+  "name": "John Doe",
+  "team": "DevOps",
+  "company": "Apple",
   "ide": "Visual Studio Code"
 }
 ```
@@ -113,7 +113,7 @@ No workspace or source code is collected.
 
 To change the output directory:
 
-1. Open **Settings** → search: `Akvelon Copilot Tracker`
+1. Open **Settings** → search: `Akvelon Copilot Insights`
 2. Select a custom path
 3. Reload the window: `Ctrl+Shift+P → Reload Window`
 
@@ -125,7 +125,7 @@ To change the output directory:
 | ------------------ | ------------------------------------------------- |
 | Logs not appearing | Ensure Copilot suggestions or chats are used      |
 | Folder not created | Verify write permissions or set custom path       |
-| Errors shown       | Check **View → Output → Akvelon Copilot Tracker** |
+| Errors shown       | Check **View → Output → Akvelon Copilot Insights** |
 
 Restarting or reinstalling the extension may resolve unresolved state issues.
 

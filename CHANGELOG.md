@@ -1,9 +1,21 @@
 # Change Log
 
-All notable changes to the "akvelon-gh-copilot-tracker" extension will be documented in this file.
+All notable changes to the "Akvelon Copilot Insights for VS Code" extension.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.6.7] - 2025-10-23
 
-## [Unreleased]
+### Added
+- Local tracking of GitHub Copilot completions and chat interactions
+- Automatic background collection every 60 minutes
+- Structured JSON metrics export for usage reporting
+- Configurable data storage location via VS Code settings
+- User configuration system for name, company, and team tracking
+- Manual log collection command
+- Privacy-first design with no external data transmission
 
-- Initial release
+### Features
+- Complete offline operation with no network requirements
+- Structured metrics output in JSON format
+- Persistent state management for collection tracking
+- User-friendly setup wizard for initial configuration
+- Custom storage directory support for shared environments

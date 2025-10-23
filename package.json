@@ -8,13 +8,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:GoshKolotyan/VsCode_Tracker.git"
+    "url": "https://github.com/GoshKolotyan/VsCode_Tracker.git"
   },
   "galleryBanner": {
     "color": "#21214c",
     "theme": "dark"
   },
-  "version": "1.6.7",
+  "version": "1.6.8",
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -46,11 +46,11 @@
       },
       {
         "command": "akvelon-gh-copilot-tracker.Configure",
-        "title": "Copilot: Configure User Settings"
+        "title": "Akvelon Copilot: Configure User Settings"
       }
     ],
     "configuration": {
-      "title": "Akvelon Copilot Tracker",
+      "title": "Akvelon Copilot Insights",
       "properties": {
         "akvelon-gh-copilot-tracker.logDirectory": {
           "type": "string",

@@ -139,9 +139,13 @@ Restarting or reinstalling the extension may resolve unresolved state issues.
 This extension adheres to strict local-only data handling:
 
 ✅ Data collected: Copilot usage metadata only.
+
 ❌ Data not collected: source code, credentials, personal content.
+
 ✅ Data storage: exclusively on the user's machine.
+
 ❌ No network transmission or analytics services.
+
 ✅ Fully transparent, open-source implementation.
 
 Organizational users are responsible for ensuring internal compliance with data retention policies.

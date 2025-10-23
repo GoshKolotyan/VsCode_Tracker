@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "Akvelon Copilot Insights for VS Code" extension.
+All notable changes to the "Copilot Logger" extension.
 
 ## [1.6.7] - 2025-10-23
 

@@ -74,8 +74,8 @@ async function findCopilotLogFiles(directory) {
                         /GitHub.*Copilot.*\d{4}-\d{2}-\d{2}/i.test(item.name);
                     
                     // Explicitly exclude third-party extension logs
-                    const isThirdPartyExtension = 
-                        item.name.toLowerCase().includes('akvelon') ||
+                    const isThirdPartyExtension =
+                        item.name.toLowerCase().includes('insights') ||
                         item.name.toLowerCase().includes('tracker') ||
                         /^\d+-.*copilot.*\.log$/i.test(item.name) ||
                         item.name.toLowerCase().includes('extension');
@@ -102,7 +102,7 @@ async function findCopilotLogFiles(directory) {
 
 function getPersistedLogsDirectory(userConfig = null) {
     // Check for user-configured custom directory
-    const config = vscode.workspace.getConfiguration('akvelon-gh-copilot-tracker');
+    const config = vscode.workspace.getConfiguration('avocado-copilot-logger');
     const customDir = config.get('logDirectory');
 
     let logsDir;

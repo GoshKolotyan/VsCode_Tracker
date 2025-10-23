@@ -19,10 +19,10 @@ let autoCollectionTimer = null;
  * @param {vscode.ExtensionContext} context
  */
 async function activate(context) {
-    console.log('Extension "akvelon-gh-copilot-tracker" is now active!');
+    console.log('Extension "avocado-copilot-logger" is now active!');
 
     // Initialize output channel
-    outputChannel = vscode.window.createOutputChannel("Akvelon Copilot Tracker");
+    outputChannel = vscode.window.createOutputChannel("Copilot Logger");
     outputChannel.appendLine("Extension activated!");
 
     // Initialize managers
@@ -57,7 +57,7 @@ async function activate(context) {
 function registerCommands(context) {
     // Manual log collection command
     const collectCommand = vscode.commands.registerCommand(
-        'akvelon-gh-copilot-tracker.CollectLogs',
+        'avocado-copilot-logger.CollectLogs',
         async function () {
             try {
                 outputChannel.clear();
@@ -76,7 +76,7 @@ function registerCommands(context) {
 
     // Configuration command
     const configureCommand = vscode.commands.registerCommand(
-        'akvelon-gh-copilot-tracker.Configure',
+        'avocado-copilot-logger.Configure',
         async function () {
             try {
                 outputChannel.clear();

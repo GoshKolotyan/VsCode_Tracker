@@ -1,7 +1,7 @@
 {
-  "name": "akvelon-gh-copilot-tracker-vscode",
-  "displayName": "Akvelon Copilot Insights for VS Code",
-  "description": "Understand how GitHub Copilot is being used across your VS Code workspace — locally and securely. Track completions, chat sessions, and aggregate metrics as structured JSON reports without sending any data online.",
+  "name": "avocado-copilot-logger",
+  "displayName": "Copilot Logger",
+  "description": "Lightweight extension that tracks GitHub Copilot completions and chat sessions, aggregates metrics, and saves them locally as structured JSON. Data collection only - analysis and reporting must be set up separately.",
   "publisher": "GurgenKolotyan",
   "preview": true,
   "icon":"icon.png",
@@ -14,7 +14,7 @@
     "color": "#21214c",
     "theme": "dark"
   },
-  "version": "1.6.8",
+  "version": "1.7.0",
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -27,7 +27,6 @@
     "usage tracker",
     "developer insights",
     "productivity metrics",
-    "Akvelon",
     "local logging",
     "VS Code",
     "copilot logs",
@@ -41,18 +40,18 @@
   "contributes": {
     "commands": [
       {
-        "command": "akvelon-gh-copilot-tracker.CollectLogs",
-        "title": "Akvelon Copilot: Collect Logs"
+        "command": "avocado-copilot-logger.CollectLogs",
+        "title": "Copilot Logger: Collect Logs"
       },
       {
-        "command": "akvelon-gh-copilot-tracker.Configure",
-        "title": "Akvelon Copilot: Configure User Settings"
+        "command": "avocado-copilot-logger.Configure",
+        "title": "Copilot Logger: Configure User Settings"
       }
     ],
     "configuration": {
-      "title": "Akvelon Copilot Insights",
+      "title": "Copilot Logger",
       "properties": {
-        "akvelon-gh-copilot-tracker.logDirectory": {
+        "avocado-copilot-logger.logDirectory": {
           "type": "string",
           "default": "",
           "description": "Custom directory path for storing collected Copilot logs. If empty, uses default location in user's home directory."

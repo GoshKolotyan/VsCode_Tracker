@@ -1,7 +1,10 @@
-## **Akvelon Copilot Insights for VS Code**
+## **Copilot Logger**
 
-Fully **local** analytics for GitHub Copilot usage in Visual Studio Code.
-Track completions and chat interactions **privately**, with **no telemetry** or data transmission outside the user’s machine.
+This lightweight extension tracks GitHub Copilot completions and chat sessions, aggregates metrics, and saves them locally as structured JSON for further private analysis and reporting.
+
+**Note:** This extension only collects and stores raw metrics data. Analysis and reporting are **not included** and must be set up separately by the user.
+
+Fully **local** data collection with **no telemetry** or data transmission outside the user's machine.
 
 ---
 
@@ -19,7 +22,7 @@ Designed for organizations requiring **strict privacy**, **compliance**, or **of
 
 ### **Demo**
 
-![Akvelon Copilot Insights in action](assets/usage.gif)
+![Copilot Logger in action](assets/usage.gif)
 
 *Collect and view Copilot usage analytics locally and securely.*
 
@@ -42,13 +45,13 @@ Designed for organizations requiring **strict privacy**, **compliance**, or **of
 1. Install the extension from the VS Code Marketplace
 2. Open the Command Palette
    `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
-3. Run → **Akvelon Copilot: Configure User Settings**
+3. Run → **Copilot Logger: Configure User Settings**
 4. Provide name, company, and team when prompted
 
 #### Validate Installation
 
 1. Trigger a manual collection
-   `Ctrl+Shift+P → Akvelon Copilot: Collect Logs`
+   `Ctrl+Shift+P → Copilot Logger: Collect Logs`
 2. When the dialog opens, navigate to the logs folder
 3. Confirm that metrics files are present
 
@@ -67,7 +70,7 @@ Default folder location:
 Example:
 
 ```
-~/Desktop/John_Doe_Akvelon_Team1-vs_code_log_collector/
+~/Desktop/John_Doe_Company_Team1-vs_code_log_collector/
 ├── metrics/
 │   └── metrics_2025-10-15.json
 ├── collection-state.json
@@ -113,7 +116,7 @@ No workspace or source code is collected.
 
 To change the output directory:
 
-1. Open **Settings** → search: `Akvelon Copilot Insights`
+1. Open **Settings** → search: `Copilot Logger`
 2. Select a custom path
 3. Reload the window: `Ctrl+Shift+P → Reload Window`
 
@@ -125,7 +128,7 @@ To change the output directory:
 | ------------------ | ------------------------------------------------- |
 | Logs not appearing | Ensure Copilot suggestions or chats are used      |
 | Folder not created | Verify write permissions or set custom path       |
-| Errors shown       | Check **View → Output → Akvelon Copilot Insights** |
+| Errors shown       | Check **View → Output → Copilot Logger** |
 
 Restarting or reinstalling the extension may resolve unresolved state issues.
 
@@ -135,11 +138,11 @@ Restarting or reinstalling the extension may resolve unresolved state issues.
 
 This extension adheres to strict local-only data handling:
 
-✅ Data collected: Copilot usage metadata only. 
-❌ Data not collected: source code, credentials, personal content .
-✅ Data storage: exclusively on the user’s machine .
-❌ No network transmission or analytics services .
-✅ Fully transparent, open-source implementation .
+✅ Data collected: Copilot usage metadata only.
+❌ Data not collected: source code, credentials, personal content.
+✅ Data storage: exclusively on the user's machine.
+❌ No network transmission or analytics services.
+✅ Fully transparent, open-source implementation.
 
 Organizational users are responsible for ensuring internal compliance with data retention policies.
 To cease data collection → disable or uninstall the extension.

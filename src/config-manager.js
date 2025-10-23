@@ -95,7 +95,7 @@ class ConfigManager {
         try {
             // Show welcome message
             const shouldConfigure = await vscode.window.showInformationMessage(
-                'Welcome to Akvelon GitHub Copilot Tracker!\n\nTo track your metrics, please configure your information.',
+                'Welcome to Copilot Logger!\n\nTo track your metrics, please configure your information.',
                 'Configure Now',
                 'Skip for Now'
             );

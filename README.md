@@ -1,4 +1,4 @@
-## ✅ **Akvelon Copilot Insights for VS Code**
+## **Akvelon Copilot Insights for VS Code**
 
 Fully **local** analytics for GitHub Copilot usage in Visual Studio Code.
 Track completions and chat interactions **privately**, with **no telemetry** or data transmission outside the user’s machine.
@@ -135,11 +135,11 @@ Restarting or reinstalling the extension may resolve unresolved state issues.
 
 This extension adheres to strict local-only data handling:
 
-✅ Data collected: Copilot usage metadata only
-❌ Data not collected: source code, credentials, personal content
-✅ Data storage: exclusively on the user’s machine
-❌ No network transmission or analytics services
-✅ Fully transparent, open-source implementation
+✅ Data collected: Copilot usage metadata only. 
+❌ Data not collected: source code, credentials, personal content .
+✅ Data storage: exclusively on the user’s machine .
+❌ No network transmission or analytics services .
+✅ Fully transparent, open-source implementation .
 
 Organizational users are responsible for ensuring internal compliance with data retention policies.
 To cease data collection → disable or uninstall the extension.
